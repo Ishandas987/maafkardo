@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="awesome light.css" />
+    <title>Awesome light</title>
+    <style>
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.15);
+        font-family: Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        pointer-events: none;
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+                       0 0 20px rgba(255, 255, 255, 0.2),
+                       0 0 30px rgba(100, 200, 255, 0.2),
+                       0 0 40px rgba(100, 200, 255, 0.1);
+        }
+        to {
+          text-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+                       0 0 30px rgba(255, 255, 255, 0.3),
+                       0 0 40px rgba(100, 200, 255, 0.3),
+                       0 0 50px rgba(100, 200, 255, 0.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div class="text">I am Sorry</div>
+    <script src="awesome light..js"></script>
+  </body>
+</html>
